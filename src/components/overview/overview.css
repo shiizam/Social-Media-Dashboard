@@ -1,0 +1,86 @@
+.overview-grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.overview-title{
+  padding-left: 2rem;
+}
+
+.overview-title h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.overview-card{
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 21rem;
+  border-radius: 0.3125rem;
+  background: var(--card-bg);
+  color: var(--light-blue-text);
+}
+
+.overview-card:hover{
+  cursor: pointer;
+  background-color: var(--hover);
+}
+
+.overview-body{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.overview-body h2{
+  margin: 0;
+  padding-top: 1.5rem;
+}
+
+.overview-body p{
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  padding-bottom: 0.5rem;
+  
+}
+
+.body-left h2{
+  font-size: 2rem;
+  color: var(--dark-text);
+}
+
+.body-right{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.body-right p{
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.like-gain{
+  color: var(--lime-green);
+}
+
+.like-loss{
+  color: var(--bright-red);
+}
+
+.arrow{
+  padding: .15rem;
+}
+
+

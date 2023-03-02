@@ -1,0 +1,81 @@
+.dashboard-header{
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.dashboard-header h1{
+  margin-bottom: 0;
+}
+
+.dashboard-title{
+  border-bottom: .5px solid var(--light-blue-text);
+}
+
+.dashboard-title h1{
+  grid-column: 2/4;
+  font-size: 1.4375rem;
+  color: var(--dark-text);
+  font-weight: 700;
+  padding-top: 1.5rem;
+}
+
+.dashboard-title p{
+  color: var(--light-blue-text);
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.main-title p{
+  color: var(--light-blue-text);
+  align-self: center;
+  font-weight: 700;
+}
+
+/********TOGGLE SWITCH********/
+
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.toggle-container {
+  display: flex;
+}
+label {
+  cursor: pointer;
+  width: 3rem;
+  height: 1.7rem;
+  background: var(--light-toggle);
+  border-radius: 1.4rem;
+  position: relative;
+  align-self: center;
+}
+
+label:after {
+  display: flex;
+  position: absolute;
+  content: "";
+  top: .15rem;
+  left: .20rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  background: #fff;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+input:checked + label {
+  background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
+}
+input:checked + label:after {
+  background: var(--light-blue-text);
+  left: calc(100% - 2.9rem);
+  transform: translateX(100%);
+}
