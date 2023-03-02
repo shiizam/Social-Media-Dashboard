@@ -1,7 +1,14 @@
 import React from 'react'
 import './follower-card.css'
 
+
+// SVG STATIC IMAGE IMPORTS
 import facebook from '../../assets/icon-facebook.svg'
+import instagram from '../../assets/icon-instagram.svg'
+import twitter from '../../assets/icon-twitter.svg'
+import youtube from '../../assets/icon-youtube.svg'
+import upArrow from '../../assets/icon-up.svg'
+import downArrow from '../../assets/icon-down.svg'
 
 
 export const FollowerCard = () => {
@@ -22,7 +29,7 @@ export const FollowerCard = () => {
         </div>
 
           <div className="card-footer">
-            <img src="/src/assets/icon-up.svg" alt="up-arrow" />
+            <img src={upArrow} alt="up-arrow" />
             <p className='count-increase'>12 Today</p>
           </div> 
 
@@ -33,7 +40,7 @@ export const FollowerCard = () => {
     <div className='card'>
       <div className='card-twitter'>
         <div className="card-head">
-          <img src="/src/assets/icon-twitter.svg" alt="twitter-logo" />
+          <img src={twitter} alt="twitter-logo" />
           <p className='user-handle'>@nathanf</p>
         </div>
 
@@ -43,7 +50,7 @@ export const FollowerCard = () => {
         </div>
 
           <div className="card-footer">
-            <img src="/src/assets/icon-up.svg" alt="up-arrow" />
+            <img src={upArrow} alt="up-arrow" />
             <p className='count-increase'>99 Today</p>
           </div> 
 
@@ -54,7 +61,7 @@ export const FollowerCard = () => {
     <div className='card'>
       <div className='card-insta'>
         <div className="card-head">
-          <img src="/src/assets/icon-instagram.svg" alt="instagram-log" />
+          <img src={instagram} alt="instagram-log" />
           <p className='user-handle'>@realnathanf</p>
         </div>
 
@@ -64,7 +71,7 @@ export const FollowerCard = () => {
         </div>
 
         <div className="card-footer">
-          <img src="/src/assets/icon-up.svg" alt="up-arrow" />
+          <img src={upArrow} alt="up-arrow" />
           <p className='count-increase'>1099 Today</p>
         </div> 
 
@@ -75,7 +82,7 @@ export const FollowerCard = () => {
     <div className='card'>
       <div className='card-youtube'>
         <div className="card-head">
-          <img src="/src/assets/icon-youtube.svg" alt="youtube-logo" />
+          <img src={youtube} alt="youtube-logo" />
           <p className='user-handle'>Nathan F.</p>
         </div>
 
@@ -85,7 +92,7 @@ export const FollowerCard = () => {
         </div>
 
         <div className="card-footer">
-          <img src="/src/assets/icon-down.svg" alt="down-arrow" />
+          <img src={downArrow} alt="down-arrow" />
           <p className='count-decrease'>144 Today</p>
         </div> 
 
