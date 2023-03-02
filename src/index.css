@@ -50,11 +50,19 @@ body[class="dark"]{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 6rem;
+    margin: 0 9.5rem;
   }
 
   .dashboard-title{
     border-bottom: 0;
+  }
+
+  .dashboard-title h1{
+    font-size: 1.7rem;
+  }
+
+  .dashboard-title p{
+    font-size: 0.875rem;
   }
 
   .cards{
@@ -64,13 +72,12 @@ body[class="dark"]{
   }
 
   .card{
-    width: 18rem;
+    width: 16rem;
   }
   
   .grid { 
     flex-direction: row;
-    gap: 1.5rem;
-    margin: 2rem;
+    gap: 2rem;
     padding: 2rem 0;
   }
 
@@ -79,17 +86,21 @@ body[class="dark"]{
   }
 
   .overview-title{
-    padding: 0 ;
-    margin: 0 6rem;
+    padding-left: 0.25rem;
+    margin: 0 9.5rem 2rem;
+    font-size: 1.6rem;
   }
+  
 
   .overview-card{
-    width: 18rem;
+    width: 16rem;
   }
 
   .overview-grid{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 9rem;
+    gap: 2rem;
   }
 }
