@@ -1,6 +1,8 @@
 import React from 'react'
 import './follower-card.css'
 
+import facebook from '../../assets/icon-facebook.svg'
+
 
 export const FollowerCard = () => {
   return (
@@ -10,7 +12,7 @@ export const FollowerCard = () => {
     <div className="card">
       <div className='card-facebook'>
         <div className="card-head">
-          <img src="/src/assets/icon-facebook.svg" alt="facebook-logo" />
+          <img src={facebook} alt="facebook-logo" />
           <p className='user-handle'>@nathanf</p>
         </div>
 
